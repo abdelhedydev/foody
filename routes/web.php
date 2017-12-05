@@ -11,10 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', 'StoreController@index');
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home/stores', 'HomeController@stores')->name('stores');
+Route::get('/home/reviews', 'HomeController@reviews')->name('reviews');
+Route::get('/home/notifications', 'HomeController@notifications')->name('reviews');
+//resources
+Route::resource('stores','StoreController');
+Route::resource('collections','CollectionController');
+Route::resource('categories','CategoriesController');

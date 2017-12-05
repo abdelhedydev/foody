@@ -7,8 +7,8 @@
             <div class="panel panel-default">
                 <div class="ui grid">
                     <div class="row">
-                        <div class="five wide column"></div>
-                            <div class="six wide column">
+                        <div class="five wide column "></div>
+                            <div class=" ui six wide column fluid card" style="padding : 15px;">
                                 <h1>Login</h1>
                                 <br>
                                 <form class="ui form form-horizontal" method="POST" action="{{ route('login') }}">

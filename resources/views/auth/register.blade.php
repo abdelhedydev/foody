@@ -9,8 +9,8 @@
                 <div class="ui grid">
                     <div class="row">
                         <div class="five wide column"></div>
-                        <div class="six wide column">
-                            <h1>Login</h1>
+                        <div class="ui card six wide column" style="padding : 15px ;">
+                            <h1>Register</h1>
                             <br>
                             <form class="ui form" method="POST" action="{{ route('register') }}">
                                {{ csrf_field() }}
